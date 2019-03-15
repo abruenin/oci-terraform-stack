@@ -10,6 +10,6 @@ resource "oci_core_subnet" "SN_Bastion" {
   cidr_block          = "${var.SN_BASTION_CIDR}"
   display_name        = "SN_Bastion"
   compartment_id      = "${var.compartment_ocid}"
-  vcn_id              = "${oci_core_virtual_network.VCN-SE-Demo.id}"
+  vcn_id              = "${oci_core_virtual_network.VCN-Demo.id}"
   dns_label           = "snbastion"
 }
